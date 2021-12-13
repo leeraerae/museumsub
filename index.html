@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>국립중앙박물관</title>
+	<link rel="icon" href="nmkicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/script-class.css">
+  <link rel="stylesheet" href="css/substyle.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="js/script.js"></script>
+  <script defer src="js/mainmenu.js"></script>
+</head>
+<body>
+  <header>
+    <div id="h-top" class="mar-0-auto flex-sbtw">
+      <div id="logo"><a href="https://leeraerae.github.io/museum/"><img src="img/header_logo.png" alt="국립중앙박물관 로고"></a></div>
+      <nav>
+        <!-- 메인 메뉴 -->
+        <ul id="gnb" class="txt-align-cen">
+          <ul class="mainMenu float-left">
+            <li><a href="#">관람정보</a>
+              <ul class="subMenu flex-around display-none">
+                <li><a href="#">관람안내</a></li>
+                <li><a href="#">전시해설</a></li>
+                <li><a href="#">예약하기</a></li>
+                <li><a href="#">관람·편의시설</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="mainMenu float-left">
+            <li><a href="#">전시</a>
+              <ul class="subMenu flex-center display-none">
+                <li><a href="#">상설전시</a></li>
+                <li><a href="#">특별전시</a></li>
+                <li><a href="#">디지털 실감 영상관</a></li>
+                <li><a href="https://leeraerae.github.io/museumsub/">온라인전시관</a></li>
+                <li><a href="#">우리문화재 국외전시</a></li>
+                <li><a href="#">소속국립박물관전시</a></li>
+                <li><a href="#">전시도록</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="mainMenu float-left">
+            <li><a href="#">교육·행사</a>
+              <ul class="subMenu flex-center display-none">
+                <li><a href="#">교육신청</a></li>
+                <li><a href="#">교육자료</a></li>
+                <li><a href="#">교육소식</a></li>
+                <li><a href="#">스튜디오 몬</a></li>
+                <li><a href="#">온라인 영상 학습 자료실</a></li>
+                <li><a href="#">문화행사</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="mainMenu float-left">
+            <li><a href="#">소장품</a>
+              <ul class="subMenu flex-center display-none">
+                <li><a href="https://leeraerae.github.io/museum_explanation/">큐레이터 추천 소장품</a></li>
+                <li><a href="#">소장품검색</a></li>
+                <li><a href="#">국보·보물 검색</a></li>
+                <li><a href="#">수어동영상</a></li>
+                <li><a href="#">소장품 열람·복제</a></li>
+                <li><a href="#">문화재 기증안내</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="mainMenu float-left">
+            <li><a href="#">학술·출판</a>
+              <ul class="subMenu flex-center display-none">
+                <li><a href="#">정기간행물</a></li>
+                <li><a href="#">고고학</a></li>
+                <li><a href="#">역사학</a></li>
+                <li><a href="#">미술사학</a></li>
+                <li><a href="#">아시아학</a></li>
+                <li><a href="#">보존과학</a></li>
+                <li><a href="#">일제 강점기 조사자료</a></li>
+                <li><a href="#">도서관</a></li>
+                <li><a href="#">기타</a></li>
+              </ul>
+            </li>              
+          </ul>
+          <ul class="mainMenu float-left">
+            <li><a href="#">소식·참여</a>
+              <ul class="subMenu flex-center display-none">
+                <li><a href="#">소식</a></li>
+                <li><a href="#">영상</a></li>
+                <li><a href="#">자원봉사안내</a></li>
+                <li><a href="#">학예사 자격증 안내</a></li>
+                <li><a href="#">전자민원</a></li>
+                <li><a href="#">정보공개</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="mainMenu flex-around float-left">
+            <li><a href="#">박물관 소개</a>
+              <ul class="subMenu flex-center display-none">
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">비전과 전략</a></li>
+                <li><a href="#">발자취</a></li>
+                <li><a href="#">조직 및 업무</a></li>
+                <li><a href="#">시설소개</a></li>
+                <li><a href="#">수장고</a></li>
+                <li><a href="#">박물관관련자료</a></li>
+                <li><a href="#">문화유산표관리시스템</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </ul>
+      </nav>
+      <ul id="mainIcon" class="flex-sbtw">
+        <li class="font-20px font-maincolor">로그인</li>
+        <li class="font-20px font-maincolor">회원가입</li>
+        <li><img src="img/header_icon1.png" alt="검색"></li>
+        <li class="display-none"><img src="img/m_menu.png" alt="검색"></li>
+
+      </ul>
+    </div>
+    <div id="subpageMain" class="flex-center">
+      <div>
+        <h1 class="font-3-75rem line-height-8-5 font-EAE6DD">온라인 전시관</h1>
+        <p class="font-28px font-EAE6DD">집으로 온 박물관, 집에서도 편하게 즐겨보세요.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="mar-0-auto po-re">
+    <img src="img/sub_back.png" alt="배경이미지" class="po-ab-bo-0">
+  
+    <div id="sectionContentsContainer" class="flex-sb flex-cl padding-68-82-106-82">
+      <div class="flex-sb">
+        <ul id="subSectionTopConLeft" class="flex-sbtw">
+          <li><a href="#"><img src="img/sub_icon1.png" alt="메인으로 가기"></a></li>
+          <li><a href="#" class="font-20px font-333"> > </a></li>
+          <li><a href="#" class="font-20px font-333"> 전시 </a></li>
+          <li><a href="#" class="font-20px font-333"> > </a></li>
+          <li><a href="#" class="font-20px font-333"> 온라인 전시관 </a></li>
+        </ul>
+        <ul id="subSectionTopConRight" class="flex-sbtw">
+          <li><a href="#"><img src="img/sub_icon2.png" alt="QR코드"></a></li>
+          <li><a href="#"><img src="img/sub_icon3.png" alt="공유하기"></a></li>
+          <li><a href="#"><img src="img/sub_icon4.png" alt="프린트"></a></li>
+        </ul>
+      </div>
+      <div class="flex-center">
+        <ul id="subSectionConTabLeft" class="flex-center border-bo-4-6D6154">
+          <li class="mar-bo-4"><a href="#" class="font-36px">중앙박물관</a></li>
+        </ul>
+        <ul id="subSectionConTabRight" class="flex-center border-bo-4-C3B8AD">
+          <li class="mar-bo-4"><a href="#" class="font-36px font-a2987c">소속박물관</a></li>
+        </ul>
+      </div>
+      <div class="flex-center">
+        <div id="sectionSearchBox" class="flex-center"><input type="text"><img src="img/sub_search.png" alt="검색하기"></div>
+      </div>
+      <div class="flex-center">
+        <div id="sectionConList" class="flex-sb flex-cl">
+        <ul id="sectionContainer" class="flex-sb">
+          <li><a href="#" id="sectionConstinerAll" class="font-333 font-20px list-click-color">전체</a></li>
+          <li><a href="#" class="font-333 font-20px noto-sans">VR</a></li>
+          <li><a href="#" class="font-333 font-20px noto-sans">새 보물 납시었네, 신국보보물전</a></li>
+          <li><a href="#" class="font-333 font-20px noto-sans">동영상</a></li>
+        </ul>
+        <ul class="flex-sb">
+          <li><a href="#" class="font-333 font-20px noto-sans">위대한 유산 오늘과 만나다</a></li>
+          <li><a href="#" class="font-333 font-20px noto-sans">한겨울 지나 봄 오듯, 세한 평안</a></li>
+          <li><a href="#" class="font-333 font-20px noto-sans">빛의 과학, 문화재의 비밀을 밝히다</a></li>
+          <li><a href="#" class="font-333 font-20px noto-sans">세계문화</a></li>
+        </ul>
+        <ul class="flex-sb">
+          <li><a href="#" class="font-333 font-20px noto-sans">호모 사피엔스</a></li>
+          <li><a href="#" class="font-333 font-20px noto-sans">유물중심</a></li>
+          <li><a href="#" class="font-333 font-20px noto-sans">시대의 얼굴,셰익스피어에서 애드 시런까지</a></li>
+          <li><a href="#" class="font-333 font-20px noto-sans">테마영상</a></li>
+          <li><a href="#" class="font-333 font-20px noto-sans">디지털 실감 영상관</a></li>
+        </ul>
+        </div>
+      </div>
+      <div id="contentsLine" class="mar-0-auto"></div>
+      <div class="flex-center">
+      <div id="sectionContentssWraper" class="flex-sbtw frex-wrap z-index-9">
+        <ul data-aos="fade-up" class="flex-sbtw flex-cl">
+          <li><a href="#"><img src="img/sub_con1.jpg" alt="호모 사피엔스"></a></li>
+          <li><a href="#" class="font-22px">호모 사피엔스 : 진화∞ 관계& 미래?</a></li>
+        </ul>
+        <ul data-aos="fade-up" class="flex-sbtw flex-cl">
+          <li><a href="#"><img src="img/sub_con2.jpg" alt="중국 고대 청동기, 신에서 인간으로"></a></li>
+          <li><a href="#" class="font-22px">중국 고대 청동기, 신에서 인간으로</a></li>
+        </ul>
+        <ul data-aos="fade-up" class="flex-sbtw flex-cl">
+          <li><a href="#"><img src="img/sub_con3.jpg" alt="위대한 유산 오늘과 만나다"></a></li>
+          <li><a href="#" class="font-22px">위대한 유산 오늘과 만나다</a></li>
+        </ul>
+        <ul data-aos="fade-up" class="flex-sbtw flex-cl">
+          <li><a href="#"><img src="img/sub_con4.jpg" alt="위대한 유산 오늘과 만나다,
+            종묘제례악 메이킹 영상"></a></li>
+          <li class="mar-top-2"><a href="#" class="font-22px">위대한 유산 오늘과 만나다,
+            종묘제례악 메이킹 영상</a></li>
+        </ul>
+        <ul data-aos="fade-up" class="flex-sbtw flex-cl">
+          <li><a href="#"><img src="img/sub_con5.jpg" alt="시대의 얼굴,
+            셰익스피어에서에드 시런까지"></a></li>
+          <li class="mar-top-2"><a href="#" class="font-22px">시대의 얼굴,
+            셰익스피어에서에드 시런까지</a></li>
+        </ul>
+        <ul data-aos="fade-up" class="flex-sbtw flex-cl">
+          <li><a href="#"><img src="img/sub_con6.jpg" alt="김홍도가 바라본 세상"></a></li>
+          <li><a href="#" class="font-22px">김홍도가 바라본 세상</a></li>
+        </ul>
+        <ul data-aos="fade-up" class="flex-sbtw flex-cl">
+          <li><a href="#"><img src="img/sub_con7.jpg" alt="디지털RNA 매머드 120일간의 기록"></a></li>
+          <li><a href="#" class="font-22px">디지털RNA 매머드 120일간의 기록</a></li>
+        </ul>
+        <ul data-aos="fade-up" class="flex-sbtw flex-cl">
+          <li><a href="#"><img src="img/sub_con8.jpg" alt="실감형 콘텐츠 동굴벽화 제작"></a></li>
+          <li><a href="#" class="font-22px">실감형 콘텐츠 동굴벽화 제작</a></li>
+        </ul>
+        <ul data-aos="fade-up" class="flex-sbtw flex-cl">
+          <li><a href="#"><img src="img/sub_con9.jpg" alt="호모 사피엔스 : 진화∞ 관계& 미래?"></a></li>
+          <li><a href="#" class="font-22px">호모 사피엔스 : 진화∞ 관계& 미래?</a></li>
+        </ul>
+      </div>
+    </div>
+      <div class="flex-center">
+        <ul id="sectionConPage" class="flex-sb">
+          <li><a href="#" class="font-22px color-6D6154"><<</a></li>
+          <li><a href="#" class="font-22px color-6D6154"><</a></li>
+          <li><a href="#" class="font-22px list-click-color">1</a></li>
+          <li><a href="#" class="font-22px color-6D6154">2</a></li>
+          <li><a href="#" class="font-22px color-6D6154">3</a></li>
+          <li><a href="#" class="font-22px color-6D6154">4</a></li>
+          <li><a href="#" class="font-22px color-6D6154">5</a></li>
+          <li><a href="#" class="font-22px color-6D6154">></a></li>
+          <li><a href="#" class="font-22px color-6D6154">>></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer부분 -->
+  <footer>
+    <div id="footerTopWraper" class="flex-center flex-cl">
+      <div id="footerTopLine"></div>
+      <div id="footerTopButton" class="po-re">
+        <a href="#"><img src="img/footer_top.png" alt="위로가기"></a>
+      </div>
+    </div>
+    <div id="footerCenterCon" class="flex-center">
+      <div id="footerGnb" class="flex-sb">
+      <ul><a href="#" class="font-EAE6DD font-bold">관람정보</a>
+        <li class="mar-top-1"><a href="#">관람안내</a></li>
+        <li><a href="#">전시해설</a></li>
+        <li><a href="#">예약하기</a></li>
+        <li><a href="#">관람·편의시설</a></li>
+        <li><a href="#">오시는길</a></li>
+      </ul>
+      <ul><a href="#" class="font-EAE6DD font-bold">전시</a>
+        <li class="mar-top-1"><a href="#">상설전시</a></li>
+        <li><a href="#">특별전시</a></li>
+        <li><a href="#">디지털 실감 영상관</a></li>
+        <li><a href="#">온라인전시관</a></li>
+        <li><a href="#">우리문화재 국외전시</a></li>
+        <li><a href="#">소속국립박물관전시</a></li>
+        <li><a href="#">전시도록</a></li>
+        <li><a href="#">외국박물관소장한국문화재</a></li>
+      </ul>
+      <ul><a href="#" class="font-EAE6DD font-bold">교육·행사</a>
+        <li class="mar-top-1"><a href="#">교육신청</a></li>
+        <li><a href="#">교육자료</a></li>
+        <li><a href="#">교육소식</a></li>
+        <li><a href="#">스튜디오 몬</a></li>
+        <li><a href="#">온라인 영상 학습 자료실</a></li>
+        <li><a href="#">문화행사</a></li>
+      </ul>
+      <ul><a href="#" class="font-EAE6DD font-bold">소장품</a>
+        <li class="mar-top-1"><a href="https://leeraerae.github.io/museum_explanation/">큐레이터 추천 소장품</a></li>
+        <li><a href="#">소장품검색</a></li>
+        <li><a href="#">국보·보물 검색</a></li>
+        <li><a href="#">수어동영상</a></li>
+        <li><a href="#">소장품 열람·복제</a></li>
+        <li><a href="#">문화재 기증안내</a></li>
+      </ul>
+      <ul><a href="#" class="font-EAE6DD font-bold">학술·출판</a>
+        <li class="mar-top-1"><a href="#">정기간행물</a></li>
+        <li><a href="#">고고학</a></li>
+        <li><a href="#">역사학</a></li>
+        <li><a href="#">미술사학</a></li>
+        <li><a href="#">아시아학</a></li>
+        <li><a href="#">보존과학</a></li>
+        <li><a href="#">일제 강점기 조사자료</a></li>
+        <li><a href="#">도서관</a></li>
+        <li><a href="#">기타</a></li>
+      </ul>
+      <ul><a href="#" class="font-EAE6DD font-bold">소식·참여</a>
+        <li class="mar-top-1"><a href="#">소식</a></li>
+        <li><a href="#">영상</a></li>
+        <li><a href="#">자원봉사안내</a></li>
+        <li><a href="#">학예사 자격증 안내</a></li>
+        <li><a href="#">전자민원</a></li>
+        <li><a href="#">정보공개</a></li>
+      </ul>
+      <ul><a href="#" class="font-EAE6DD font-bold">박물관 소개</a>
+        <li class="mar-top-1"><a href="#">인사말</a></li>
+        <li><a href="#">비전과 전략</a></li>
+        <li><a href="#">발자취</a></li>
+        <li><a href="#">조직 및 업무</a></li>
+        <li><a href="#">시설소개</a></li>
+        <li><a href="#">수장고</a></li>
+        <li><a href="#">박물관관련자료</a></li>
+        <li><a href="#">문화유산표관리시스템</a></li>
+      </ul>
+    </div>
+  </div>
+    <div id="footerGnbBottomWraper" class="flex-center mar-0-auto">
+      <ul id="footerGnbBottom" class="mar-0-auto flex-sb font-maincolor">
+        <li><a href="#" class="transition-0-5">어린이 박물관</a></li>
+        <li class="border-right-620"></li>
+        <li><a href="#" class="transition-0-5">학술자 자격증</a></li>
+        <li class="border-right-620"></li>
+        <li><a href="#" class="transition-0-5">e뮤지엄</a></li>
+        <li class="border-right-620"></li>
+        <li><a href="#" class="transition-0-5">의규장각 의궤 원문</a></li>
+        <li class="border-right-620"></li>
+        <li><a href="#" class="transition-0-5">이러닝</a></li>
+        <li class="border-right-620"></li>
+        <li><a href="#" class="transition-0-5">박물관 신문</a></li>
+        <li class="border-right-620"></li>
+        <li><a href="#" class="transition-0-5">문화상품권</a></li>
+      </ul>
+    </div>
+    <div id="footerBottomCon" class="flex-sb">
+      <div class="flex-sb flex-cl">
+        <div class="mar-bo-2">
+          <img src="img/footer_logo.png" alt="푸터 로고">
+          <p class="font-EAE6DD">04383 서울시 용산구 서빙고로 137(용산동6가 168-6)<br>
+            대표전화 02-2077-9000</p>
+        </div>
+        <div>
+          <ul id="footerLink" class="flex-sb mar-bo-2">
+            <li><a href="#" class="font-EAE6DD transition-0-3">문화유산표준관리시스템</a></li>
+            <li class="border-right-620"></li>
+            <li><a href="#" class="font-EAE6DD transition-0-3">청년멘토</a></li>
+            <li class="border-right-620"></li>
+            <li><a href="#" class="font-EAE6DD transition-0-3">YCM가상명품박물관</a></li>
+          </ul>
+          <ul id="footerSns" class="flex-sb align-items-center mar-top-4">
+            <li><a href="#"><img src="img/footer_sns1.png" alt="네이버블로그"></a></li>
+            <li><a href="#"><img src="img/footer_sns2.png" alt="트위터"></a></li>
+            <li><a href="#"><img src="img/footer_sns3.png" alt="페이스북"></a></li>
+            <li><a href="#"><img src="img/footer_sns4.png" alt="인스타그램"></a></li>
+            <li><a href="#"><img src="img/footer_sns5.png" alt="유튜브"></a></li>
+            <li><a href="#"><img src="img/footer_sns6.png" alt="네이버블로그"></a></li>
+          </ul>
+        </div>
+        <div>
+          <ul id="footer-last-link" class="flex-sb mar-top-4">
+            <li><a href="#" class="font-EAE6DD">개인정보처리방침</a></li>
+            <li class="border-right-620"></li>
+            <li><a href="#" class="font-EAE6DD transition-0-3">이용약관</a></li>
+            <li class="border-right-620"></li>
+            <li><a href="#" class="font-EAE6DD transition-0-3">전자민원</a></li>
+            <li class="border-right-620"></li>
+            <li><a href="#" class="font-EAE6DD transition-0-3">공공데이터개방</a></li>
+            <li class="border-right-620"></li>
+            <li><a href="#" class="font-EAE6DD transition-0-3">저작권정책</a></li>
+            <li class="border-right-620"></li>
+            <li><a href="#" class="font-EAE6DD transition-0-3">클린신고센터</a></li>
+            <li class="border-right-620"></li>
+            <li><a href="#" class="font-EAE6DD transition-0-3">오시는 길</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="footerRightCon" class="flex-sb flex-cl">
+        <div id="dropUpBox" class="flex-sb flex-cl">
+          <div class="footer-drop-up po-re">
+            <ul id="dropContents-1" class="display-none">
+              <li><a href="#">국립박물과 문화재단</a></li>
+              <li><a href="#">국립중앙박물관회</a></li>
+              <li><a href="#">사단법인 한국박물관협회</a></li>
+            </ul>
+            <ul class="dropUpButton border-bo-2px-620 txt-align-ri po-ab-00"><a href="#" class="font-EAE6DD">관련 사이트 바로가기<img src="img/footer_arr.png" alt="관련사이트 바로가기" class="margin-2vh"></a></ul>
+          </div>
+          <div class="footer-drop-up po-re">
+            <ul id="dropContents-2" class="dropUpBoxSize txt-align-cen po-ab-0-50 back-co-deepbro display-none">
+              <li><a href="#">국립경주박물관</a></li>
+              <li><a href="#">국립광주박물관</a></li>
+              <li><a href="#">국립전주박물관</a></li>
+              <li><a href="#">국립대구박물관</a></li>
+              <li><a href="#">국립부여박물관</a></li>
+              <li><a href="#">국립공주박물관</a></li>
+              <li><a href="#">국립진주박물관</a></li>
+              <li><a href="#">국립청주박물관</a></li>
+              <li><a href="#">국립김해박물관</a></li>
+              <li><a href="#">국립제주박물관</a></li>
+              <li><a href="#">국립춘천박물관</a></li>
+              <li><a href="#">국립나주박물관</a></li>
+              <li><a href="#">국립익산박물관</a></li>
+            </ul>
+            <ul class="dropUpButton border-bo-2px-620 txt-align-ri po-ab-00"><a href="#" class="font-EAE6DD">소속박물관 바로가기<img src="img/footer_arr.png" alt="소속박물관 바로가기" class="margin-2vh"></a></ul>
+          </div>
+          <div class="footer-drop-up po-re">
+            <ul id="dropContents-3" class="dropUpBoxSize txt-align-cen po-ab-0-50 back-co-deepbro display-none">
+              <li><a href="#">한국어(PDF)</a></li>
+              <li><a href="#">English(PDF)</a></li>
+              <li><a href="#">中文(PDF)</a></li>
+              <li><a href="#">日本語(PDF)</a></li>
+              <li><a href="#">Русский(PDF)</a></li>
+              <li><a href="#">Français(PDF)</a></li>
+              <li><a href="#">Deutsche(PDF)</a></li>
+              <li><a href="#">Tiếng Việt(PDF)</a></li>
+              <li><a href="#">Español(PDF)</a></li>
+              <li><a href="#">프로그램(11월~22년 1월)(PDF)</a></li>
+              <li><a href="#">박물관 야외정원 안내</a></li>
+            </ul>
+            <ul class="dropUpButton border-bo-2px-620 txt-align-ri po-ab-00"><a href="#" class="font-EAE6DD">가이드북 다운로드<img src="img/footer_arr.png" alt="가이드북 다운로드" class="margin-2vh"></a></ul>
+          </div>
+        </div>
+      <p class="font-EAE6DD">© National Museum of Korea.</p>
+
+      </div>
+    </div>
+    
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
