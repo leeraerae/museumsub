@@ -1,0 +1,519 @@
+@font-face {
+  font-family: 'KoPubDotumMedium';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GowunDodum-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul, li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+body{
+  width: 100vw;
+  height: auto;
+  font-family: 'KoPubDotumMedium';
+  color : #161616;
+  background-image: url("../img/sub_background.jpg");
+}
+
+/* header 스타일 시트*/
+
+/* 헤더 gnb 부분 */
+header{
+  width: 100vw;
+  height: 50vh;
+}
+header #h-top{
+  width: 85.4vw;
+  height: 14vh;
+}
+header nav{
+  width: 50vw;
+  height: 15vh;
+  margin-top: 13vh;
+}
+header nav a{
+  text-align: center;
+  color: #F6F2F0;
+}
+/* 상단 GNB */
+header nav #gnb a{
+  font-size: 1.25rem;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s;
+}
+header nav #gnb a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #EAD087;
+  transition: 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+header nav #gnb a:hover{
+  color: #EAD087;
+}
+header nav #gnb a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+header #mainIcon{
+  width: 13vw;
+}
+header #mainIcon li:hover{
+  transition: all 0.5s;
+}
+header #mainIcon li:hover{
+  color: #EAD087;
+}
+
+/* header .mainMenu{
+  width: 10vw;
+  height: 6vh;
+  background-color: darkmagenta;
+} */
+
+header .mainMenu>li{
+  width: 7vw;
+  height: 4.6vh;
+}
+header .mainMenu>li:hover .subMenu{
+  display: flex;
+  position: absolute;
+  top : 9vh;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+/* 호버시 나오는 서브메뉴 */
+header .subMenu{
+  width: 60vw;
+  height: 6vh;
+}
+header .subMenu li{
+  width: 8.5vw;
+  height: 3vh;
+  margin: 4px;
+}
+header .subMenu li a{
+  color: #F6F2F0;
+  display: inline-block;
+  position: relative;
+}
+header .subMenu li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #EAD087;
+  transition: 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+header .subMenu li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/* header 메인 타이틀 이미지 */
+#subpageMain{
+  width: 100vw;
+  height: 36vh;
+  background-image: url(../img/sub_mainimg.png);
+  position: absolute;
+  top: 13vh;
+  z-index: -1;
+  
+}
+#subpageMain>div{
+  width: 72vw;
+}
+
+/* section 부분 */
+section{
+  width: 93.75vw;
+  height: 240vh;
+  background-color: #FDFCF9;
+}
+#sectionContentsContainer{
+  width: 93.75vw;
+  height: 238vh;
+}
+/* 섹션 상단 아이콘 */
+#subSectionTopConLeft{
+  width: 15.2vw;
+  height: 3.3vh;
+}
+#subSectionTopConRight{
+  width: 8.7vw;
+  height: 6.4vh;
+}
+/* 섹션 중앙박물관 소속박물관 탭 버튼 */
+#subSectionConTabLeft{
+  width: 12.8vw;
+  height: 3.5vh;
+}
+#subSectionConTabRight{
+  width: 12.8vw;
+  height: 3.5vh;
+}
+/* 섹션 검색 부분 */
+#sectionSearchBox{
+  width: 41.7vw;
+  height: 5.7vh;
+  background-color: #F5F3F0;
+  border: 2px solid #A2987C;
+  border-radius: 30px;
+}
+#sectionSearchBox input{
+  width: 35vw;
+  height: 5vh;
+  border: none;
+  background-color: #F5F3F0;
+  font-size: 1.5em;
+}
+/* 섹션 필터링 박스 부분 */
+#sectionConList{
+  width: 59.8vw;
+  height: 16vh;
+}
+#sectionConList a{
+  transition: all 0.5s;
+}
+#sectionConList a:hover{
+  color: #7458A5;
+}
+.list-click-color{
+  color: #7458A5;
+  border-bottom: 1px solid #7458A5;
+  font-weight: bold;
+}
+/* 섹션 중간 라인 */
+#contentsLine{
+  width: 71.8vw;
+  height: 3.1vh;
+  border-bottom: #A2987C 1px solid;
+}
+/* 섹션 온라인 박물관 콘텐츠 */
+#sectionContentssWraper{
+  width: 67.7vw;
+  height: 142.5vh;
+}
+#sectionContentssWraper ul{
+  width: 20.8vw;
+  height: 37.5vh;
+}
+#sectionContentssWraper ul li:nth-child(2) a{
+  transition: all 0.5s;
+}
+#sectionContentssWraper ul li:nth-child(2):hover a{
+  color: #7458A5;
+}
+/* 섹션 페이지 */
+#sectionConPage{
+  width: 23.4vw;
+  height: 3.7vh;
+}
+#sectionConPage a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* footer 부분 */
+footer{
+  width: 100vh;
+  height: 130vh;
+  line-height: 1.8em;
+}
+#footerTopWraper{
+  width: 100vw;
+}
+#footerTopLine{
+  width: 100vw;
+  height: 13.8vh;
+  border-bottom: #E2D7D1 1px solid;
+}
+#footerTopButton{
+  top: -74px;
+  transition: 0.5s;
+}
+#footerTopButton:hover{
+  transform: scale(0.9);
+}
+#footerCenterCon{
+  width: 100vw;
+  height: auto;
+}
+#footerGnb{
+  width: 83.3vw;
+  height: 35.1vh;
+}
+#footerGnb ul li{
+  color: #D5CFC9;
+  line-height: 2rem;
+}
+#footerGnbBottomWraper{
+  width: 100vw;
+  height: 13vh;
+}
+#footerGnbBottom{
+  width: 60vw;
+  height: 3.7vh;
+}
+#footerGnbBottom a:hover{
+  color: #EAD087;
+}
+#footerBottomCon{
+  width: 100vw;
+  height: 40vh;
+  padding: 6.2vh 7.2vh;
+}
+#footerSns{
+  width: 18.75vw;
+}
+#footerLink{
+  width: 23.8vw;
+  height: 2.4vh;
+}
+#footerLink a:hover{
+  color: #EAD087;
+}
+#footer-last-link{
+  width: 57.9vw;
+  height: 2.4vh;
+}
+#footer-last-link a:hover{
+  color: #EAD087;
+}
+.dropUpButton{
+  width: 10.4vw;
+  height: 3.3vh;
+}
+.footer-drop-up{
+  width: 10.4vw;
+  height: 3.3vh;
+}
+#footerRightCon{
+  width: 12.5vw;
+  height: 26vh;
+  margin-top: 7vh;
+}
+#dropUpBox{
+  width: 10.6vw;
+  height: 17vh;
+}
+.dropUpBoxSize li{
+  transition: all 0.3s;
+}
+.dropUpBoxSize li:hover{
+  color: #EAD087;
+}
+.dropUpBoxSize{
+  width: 10.4vw;
+  padding: 2vh 2vh 4vh 2vh;
+  color: #EAE6DD;
+  line-height: 2rem;
+}
+
+
+
+@media (max-width: 800px) {
+  header nav{
+    display: none;
+  }
+  #mainIcon li{
+    display: none;
+  }
+  #mainIcon li:nth-child(4){
+    display: block;
+  }
+  #subpageMain{
+    width: 100vw;
+    height: 36vh;
+    background-image: url(../img/sub_mainimg.png);
+    position: absolute;
+    top: 13vh;
+  }
+  #subpageMain>div{
+    width: 72vw;
+  }
+  #subpageMain h1{
+    font-size: 3rem;
+  }
+  #subpageMain p{
+    font-size: 1.25rem;
+  }
+
+
+/* section 상단 */
+section{
+  width: 100vw;
+  height: 550vh;
+  background-color: #FDFCF9;
+}
+#sectionContentsContainer{
+  width: 93.75vw;
+  height: 400vh;
+}
+/* 섹션 상단 아이콘 */
+#subSectionTopConLeft{
+  width: 46vw;
+  height: 6.4vh;
+}
+#subSectionTopConRight{
+  width: 30vw;
+  height: 6.4vh;
+}
+/* 섹션 중앙박물관 소속박물관 탭 버튼 */
+#subSectionConTabLeft{
+  width: 30vw;
+  height: 3.5vh;
+}
+#subSectionConTabLeft a{
+  font-size: 1.5rem;
+}
+#subSectionConTabRight{
+  width: 30vw;
+  height: 3.5vh;
+}
+#subSectionConTabRight a{
+  font-size: 1.5rem;
+}
+/* 섹션 검색 부분 */
+#sectionSearchBox{
+  width: 70vw;
+  height: 5vh;
+  background-color: #F5F3F0;
+  border: 2px solid #A2987C;
+  border-radius: 30px;
+}
+#sectionSearchBox input{
+  width: 55vw;
+  height: 4vh;
+  border: none;
+  background-color: #F5F3F0;
+  font-size: 1.5em;
+}
+/* 섹션 필터링 박스 부분 */
+#sectionConList{
+  width: 100vw;
+  height: 40vh;
+}
+#sectionConList ul:nth-child(2){
+  height: 15vh;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+#sectionConList ul:nth-child(3){
+  height: 15vh;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.list-click-color{
+  color: #7458A5;
+  border-bottom: 1px solid #7458A5;
+  font-weight: bold;
+}
+
+
+/* 섹션 콘텐츠들  */
+/* 섹션 온라인 박물관 콘텐츠 */
+#sectionContentssWraper{
+  width: 80vw;
+  height: 300vh;
+}
+#sectionContentssWraper{
+  display: block;
+}
+#sectionContentssWraper ul{
+  width: 80vw;
+  height: 40vh;
+  justify-content: space-around;
+  margin-bottom: 10vh;
+}
+#sectionContentssWraper li{
+  margin-top: 0px;
+}
+/* 섹션 페이지 */
+#sectionConPage{
+  width: 23.4vw;
+  height: 3.7vh;
+}
+/* footer */
+footer{
+  width: 100vh;
+  height: 30vh;
+}
+#footerTopWraper{
+  width: 100vw;
+
+}
+#footerCenterCon{
+  display: none;
+}
+#footerGnb{
+  width: 83.3vw;
+  height: 35.1vh;
+}
+#footerGnb ul li{
+  color: #D5CFC9;
+  line-height: 2rem;
+}
+#footerGnbBottomWraper{
+  display: none;
+}
+#footerGnbBottom{
+  width: 100vw;
+  height: 3.7vh;
+}
+#footerGnbBottom a:hover{
+  color: #EAD087;
+}
+#footerBottomCon{
+  width: 100vw;
+  height: 40vh;
+  padding: 6.2vh 7.2vh;
+}
+#footerSns{
+  display: none;
+}
+#footerLink{
+  display: none;
+}
+#footer-last-link{
+  width: 100vw;
+  height: 10vh;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+#footer-last-link li{
+  width: 25vw;
+  height: 2vh;
+  border-right: none;
+}
+
+#footerRightCon{
+  display: none;
+}
+.font-notosans{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+}
